@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EliteVolt Electrical | Professional Services</title>
+
+<!-- CSS -->
+<style>
+body {margin:0;font-family:'Segoe UI',sans-serif;background:#f9f9f9;}
+header{position:sticky;top:0;background:#111;color:white;padding:15px;text-align:center;font-weight:bold;letter-spacing:1px;z-index:1000;}
+.hero{background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789');background-size:cover;color:white;text-align:center;padding:80px 20px;}
+.hero h1{font-size:36px;margin-bottom:10px;}
+.hero p{font-size:18px;}
+.btn{display:inline-block;margin:10px;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:bold;}
+.call{background:#ff6600;color:white;}
+.text{background:#25D366;color:white;}
+.book{background:#007acc;color:white;}
+.section{padding:50px 20px;text-align:center;}
+.services{display:flex;flex-wrap:wrap;justify-content:center;}
+.card{background:white;margin:15px;padding:25px;width:260px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s;}
+.card:hover{transform:translateY(-10px);}
+.review{background:white;margin:15px auto;padding:20px;max-width:450px;border-radius:12px;box-shadow:0 5px 10px rgba(0,0,0,0.1);}
+.contact{background:#111;color:white;padding:50px 20px;}
+form{max-width:400px;margin:0 auto;background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+form input,form textarea{width:100%;padding:12px;margin:10px 0;border-radius:8px;border:1px solid #ccc;box-sizing:border-box;}
+form button{background:#ff6600;color:white;padding:12px 20px;border:none;border-radius:8px;font-weight:bold;cursor:pointer;}
+form button:hover{background:#e65c00;}
+footer{background:black;color:white;text-align:center;padding:15px;}
+/* Gallery Slider */
+.slider{display:flex;overflow-x:auto;scroll-behavior:smooth;margin:20px 0;}
+.slider img{width:300px;margin:0 10px;border-radius:12px;flex-shrink:0;}
+/* WhatsApp button */
+.whatsapp-btn{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3);}
+</style>
+</head>
+
+<body>
+
+<header>ELITEVOLT ELECTRICAL ⚡</header>
+
+<div class="hero">
+<h1>Powering Your Home Safely</h1>
+<p>Licensed • Insured • Same-Day Service • Free Estimates</p>
+<a href="tel:5551234567" class="btn call">📞 Call Now</a>
+<a href="sms:5551234567" class="btn text">💬 Text Us</a>
+<a href="#booking" class="btn book">📅 Book Online</a>
+</div>
+
+<div class="section">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">💡 Lighting Installation</div>
+<div class="card">⚡ Panel Upgrades</div>
+<div class="card">🔌 Wiring & Outlets</div>
+<div class="card">🚨 Emergency Repairs</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Customer Reviews</h2>
+<div class="review">⭐⭐⭐⭐⭐<br>“Fast, professional, and clean. Highly recommend!”</div>
+<div class="review">⭐⭐⭐⭐⭐<br>“Fixed our panel the same day with great pricing.”</div>
+<div class="review">⭐⭐⭐⭐⭐<br>“Reliable and honest electricians. Will call again!”</div>
+</div>
+
+<div class="section" id="gallery">
+<h2>Recent Projects</h2>
+<div class="slider">
+<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc" alt="Project 1">
+<img src="https://images.unsplash.com/photo-1604147706283-d7119b5b822c" alt="Project 2">
+<img src="https://images.unsplash.com/photo-1597764690523-15bea4c581c9" alt="Project 3">
+</div>
+</div>
+
+<div class="section" id="booking">
+<h2>Request a Free Estimate</h2>
+<form id="estimateForm">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea placeholder="Brief Description of Work" required></textarea>
+<button type="submit">Send Request</button>
+<p id="formMessage"></p>
+</form>
+</div>
+
+<div class="section contact">
+<h2>Contact Us</h2>
+<p>📞 (555) 123-4567</p>
+<p>📧 youremail@email.com</p>
+<p>📍 Your City, State</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019049328187!2d-122.41941568468183!3d37.77492927975927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c96f1d6d7%3A0x0!2zMzfCsDQ2JzI5LjgiTiAxMjLCsDI1JzA5LjciVw!5e0!3m2!1sen!2sus!4v1616172630000!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+<a href="https://wa.me/15551234567" class="whatsapp-btn" target="_blank">💬</a>
+
+<footer>© 2026 EliteVolt Electrical</footer>
+
+<script>
+// Form submission (dummy)
+document.getElementById('estimateForm').addEventListener('submit', function(e){
+e.preventDefault();
+document.getElementById('formMessage').textContent = "✅ Thank you! Your request has been sent. We’ll contact you shortly.";
+this.reset();
+});
+</script>
+
+</body>
+</html>
